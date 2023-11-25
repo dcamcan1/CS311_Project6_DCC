@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Balance Sheet Calculator</title>
+</head>
+<body>
+    <div id="header">
+        <header><h1>Bellarmine Financials - Balance Sheet Calculator</h1></header>
+    </div>
+    <div id="container">
+        <div id="assetsheader">Assets</div>
+        <div id="liabilitiesheader">Liabilities</div>
+
+        <div id="currentAssets">
+            <div id="title">
+                Current Assets
+            </div>
+            <button onclick="addCurrentAssets()" id="currentAssetsButton" class="button">Add Current Assets</button>
+        </div>
+
+        <div id="currentliab">
+            <div id="title">    
+                Current Liabilities
+            </div>
+            <button onclick="addCurrentLiab()" id="currentLiabButton" class="button">Add Current Liabilities</button>
+        </div>
+        
+        <div id="investProp">
+            <div id="title">
+                <br>
+                Investment Property & Equipment
+            </div>
+            <button onclick="addInvest()" id="investButton" class="button">Add Investment Property & Equipment</button>
+        </div>
+
+        <div id="longtermliab">
+            <div id="title">
+                <br>
+                Long-Term Liabilities
+            </div>
+            <button onclick="addLong()" id="longButton" class="button">Add Long-Term Liabilities</button>
+        </div>
+
+        <div id="intangibles">
+            <div id="title">
+                <br>
+                Intangibles
+            </div>
+            <button onclick="addIntang()" id="intangButton" class="button">Add Intangibles</button>
+        </div>
+
+        <div id="totalposition">
+            <h2>Total Position</h2>
+            <button id="calcPos" onclick="calculatePosition()" style="display: none;">Calculate Position</button>
+            <div id="totalassets">
+                <h3>Total Assets:</h3>
+            </div>
+            <div id="totalliab">
+                <h3>Total Liabilities:</h3>
+            </div>
+            <div id="position">
+                <h3>Position:</h3>
+            </div>
+        </div>
+    </div>    
+    <div id="footer">
+        <br>
+        <footer>&copy Bellarmine University 2023</footer>
+    </div>
+    <script src="./js/scriptfile.js"></script>
+</body>
+</html>
